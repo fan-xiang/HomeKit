@@ -81,6 +81,7 @@
 {
     AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     
+    NSInteger kScreen = [UIScreen mainScreen].bounds.size.width;
     UIViewController *rootVC = appdelegate.window.rootViewController;
     UIViewController *presentedVC = rootVC.presentedViewController;
     if (self.viewControllers.count == 1)
@@ -90,6 +91,7 @@
     if (panGesture.state == UIGestureRecognizerStateBegan)
     {
         appdelegate.screenshotView.hidden = NO;
+        appdelegate.screenshotView.imgView.image = self.arrayScreenshot[self.arrayScreenshot.count - 1];
     }
     else if (panGesture.state == UIGestureRecognizerStateChanged)
     {
@@ -98,6 +100,7 @@
         if (point_inView.x >= 10)
         {
             rootVC.view.transform = CGAffineTransformMakeTranslation(point_inView.x - 10, 0);
+            appdelegate.screenshotView.transform = CGAffineTransformMakeTranslation (point_inView.x, 0);
             presentedVC.view.transform = CGAffineTransformMakeTranslation(point_inView.x - 10, 0);
         }
     }
@@ -107,19 +110,22 @@
         if (point_inView.x >= DISTANCE_TO_POP)
         {
             [UIView animateWithDuration:0.3 animations:^{
-                rootVC.view.transform = CGAffineTransformMakeTranslation(320, 0);
-                presentedVC.view.transform = CGAffineTransformMakeTranslation(320, 0);
+                rootVC.view.transform = CGAffineTransformMakeTranslation(kScreen, 0);
+                appdelegate.screenshotView.transform = CGAffineTransformMakeTranslation(kScreen, 0);
+                presentedVC.view.transform = CGAffineTransformMakeTranslation(kScreen, 0);
             } completion:^(BOOL finished) {
                 [self popViewControllerAnimated:NO];
                 rootVC.view.transform = CGAffineTransformIdentity;
                 presentedVC.view.transform = CGAffineTransformIdentity;
                 appdelegate.screenshotView.hidden = YES;
+                appdelegate.screenshotView.transform = CGAffineTransformMakeTranslation(-kScreen, 0);
             }];
         }
         else
         {
             [UIView animateWithDuration:0.3 animations:^{
                 rootVC.view.transform = CGAffineTransformIdentity;
+                appdelegate.screenshotView.transform = CGAffineTransformIdentity;
                 presentedVC.view.transform = CGAffineTransformIdentity;
             } completion:^(BOOL finished) {
                 appdelegate.screenshotView.hidden = YES;

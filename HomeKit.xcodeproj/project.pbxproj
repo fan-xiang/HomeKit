@@ -24,6 +24,7 @@
 		A935079F1DC206D600CD6D3F /* ESMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A935079E1DC206D600CD6D3F /* ESMBaseViewController.m */; };
 		A93507A21DC2094E00CD6D3F /* ScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = A93507A11DC2094E00CD6D3F /* ScreenShotView.m */; };
 		A93507A51DC20A7A00CD6D3F /* ESMOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93507A41DC20A7A00CD6D3F /* ESMOneViewController.m */; };
+		A9FD93051DC327F10075129E /* ESMTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FD93041DC327F10075129E /* ESMTwoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		A93507A11DC2094E00CD6D3F /* ScreenShotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotView.m; sourceTree = "<group>"; };
 		A93507A31DC20A7A00CD6D3F /* ESMOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMOneViewController.h; sourceTree = "<group>"; };
 		A93507A41DC20A7A00CD6D3F /* ESMOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMOneViewController.m; sourceTree = "<group>"; };
+		A9FD93031DC327F10075129E /* ESMTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMTwoViewController.h; sourceTree = "<group>"; };
+		A9FD93041DC327F10075129E /* ESMTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMTwoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,8 @@
 				A93507951DC1FB5600CD6D3F /* ESMTestViewController.m */,
 				A93507A31DC20A7A00CD6D3F /* ESMOneViewController.h */,
 				A93507A41DC20A7A00CD6D3F /* ESMOneViewController.m */,
+				A9FD93031DC327F10075129E /* ESMTwoViewController.h */,
+				A9FD93041DC327F10075129E /* ESMTwoViewController.m */,
 				A93507971DC1FB6900CD6D3F /* ESMMoneyViewController.h */,
 				A93507981DC1FB6900CD6D3F /* ESMMoneyViewController.m */,
 				A935079A1DC1FB7300CD6D3F /* ESMMeViewController.h */,
@@ -337,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FD93051DC327F10075129E /* ESMTwoViewController.m in Sources */,
 				A935078E1DC1FA8900CD6D3F /* ESMTabBarVC.m in Sources */,
 				A935079C1DC1FB7300CD6D3F /* ESMMeViewController.m in Sources */,
 				A93507A21DC2094E00CD6D3F /* ScreenShotView.m in Sources */,

@@ -1,30 +1,33 @@
 //
-//  ESMMoneyViewController.m
+//  ESMTwoViewController.m
 //  HomeKit
 //
-//  Created by 可米小子 on 16/10/27.
+//  Created by 可米小子 on 16/10/28.
 //  Copyright © 2016年 可米小子. All rights reserved.
 //
 
-#import "ESMMoneyViewController.h"
-#import "ESMOneViewController.h"
+#import "ESMTwoViewController.h"
 
 #define kScreenWidth    [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight    [UIScreen mainScreen].bounds.size.height
 #define KLineHeight kScreenWidth/375
 
-@interface ESMMoneyViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@interface ESMTwoViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic)UITableView *tableView;
 
+
 @end
 
-@implementation ESMMoneyViewController
+@implementation ESMTwoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     [self.view addSubview:self.tableView];
+    // Do any additional setup after loading the view.
+    [self.view addSubview:self.tableView];
 }
+
 
 #pragma mark - delegate
 
@@ -33,7 +36,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 9;
+      return 9;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -51,9 +54,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
-    [self.navigationController pushViewController:[[ESMOneViewController alloc]init] animated:YES];
+
+
+
 }
 
 - (UITableView *)tableView {

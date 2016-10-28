@@ -23,7 +23,7 @@
     self.window.rootViewController = tabBar;
     [self.window makeKeyAndVisible];
     #if kUseScreenShotGesture
-    self.screenshotView = [[ScreenShotView alloc] initWithFrame:CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height)];
+    self.screenshotView = [[ScreenShotView alloc] initWithFrame:CGRectMake(-self.window.frame.size.width, 0, self.window.frame.size.width, self.window.frame.size.height)];
     [self.window insertSubview:_screenshotView atIndex:0];
     self.screenshotView.hidden = YES;
      #endif
