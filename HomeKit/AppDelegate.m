@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ESMTabBarVC.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor=[UIColor whiteColor];
+    ESMTabBarVC *tabBar = [[ESMTabBarVC alloc]init];
+    self.window.rootViewController = tabBar;
+    [self.window makeKeyAndVisible];
+    #if kUseScreenShotGesture
+    self.screenshotView = [[ScreenShotView alloc] initWithFrame:CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height)];
+    [self.window insertSubview:_screenshotView atIndex:0];
+    self.screenshotView.hidden = YES;
+     #endif
+    
+
+    
     return YES;
 }
 

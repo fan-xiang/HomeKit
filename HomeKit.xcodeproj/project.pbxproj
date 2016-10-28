@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		A93507551DC1F54900CD6D3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A93507541DC1F54900CD6D3F /* main.m */; };
 		A93507581DC1F54900CD6D3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A93507571DC1F54900CD6D3F /* AppDelegate.m */; };
-		A935075B1DC1F54900CD6D3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A935075A1DC1F54900CD6D3F /* ViewController.m */; };
 		A935075E1DC1F54900CD6D3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A935075C1DC1F54900CD6D3F /* Main.storyboard */; };
 		A93507601DC1F54900CD6D3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A935075F1DC1F54900CD6D3F /* Assets.xcassets */; };
 		A93507631DC1F54900CD6D3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93507611DC1F54900CD6D3F /* LaunchScreen.storyboard */; };
 		A935076E1DC1F54900CD6D3F /* HomeKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A935076D1DC1F54900CD6D3F /* HomeKitTests.m */; };
 		A93507791DC1F54900CD6D3F /* HomeKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A93507781DC1F54900CD6D3F /* HomeKitUITests.m */; };
+		A93507881DC1F76E00CD6D3F /* ESMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93507871DC1F76E00CD6D3F /* ESMTabBarViewController.m */; };
+		A935078B1DC1F8FB00CD6D3F /* ESMNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A935078A1DC1F8FB00CD6D3F /* ESMNavigationViewController.m */; };
+		A935078E1DC1FA8900CD6D3F /* ESMTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A935078D1DC1FA8900CD6D3F /* ESMTabBarVC.m */; };
+		A93507931DC1FB4100CD6D3F /* ESMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93507921DC1FB4100CD6D3F /* ESMHomeViewController.m */; };
+		A93507961DC1FB5600CD6D3F /* ESMTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93507951DC1FB5600CD6D3F /* ESMTestViewController.m */; };
+		A93507991DC1FB6900CD6D3F /* ESMMoneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93507981DC1FB6900CD6D3F /* ESMMoneyViewController.m */; };
+		A935079C1DC1FB7300CD6D3F /* ESMMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A935079B1DC1FB7300CD6D3F /* ESMMeViewController.m */; };
+		A935079F1DC206D600CD6D3F /* ESMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A935079E1DC206D600CD6D3F /* ESMBaseViewController.m */; };
+		A93507A21DC2094E00CD6D3F /* ScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = A93507A11DC2094E00CD6D3F /* ScreenShotView.m */; };
+		A93507A51DC20A7A00CD6D3F /* ESMOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93507A41DC20A7A00CD6D3F /* ESMOneViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +48,6 @@
 		A93507541DC1F54900CD6D3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A93507561DC1F54900CD6D3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A93507571DC1F54900CD6D3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A93507591DC1F54900CD6D3F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A935075A1DC1F54900CD6D3F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A935075D1DC1F54900CD6D3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A935075F1DC1F54900CD6D3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A93507621DC1F54900CD6D3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,26 @@
 		A93507741DC1F54900CD6D3F /* HomeKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93507781DC1F54900CD6D3F /* HomeKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeKitUITests.m; sourceTree = "<group>"; };
 		A935077A1DC1F54900CD6D3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A93507861DC1F76E00CD6D3F /* ESMTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMTabBarViewController.h; sourceTree = "<group>"; };
+		A93507871DC1F76E00CD6D3F /* ESMTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMTabBarViewController.m; sourceTree = "<group>"; };
+		A93507891DC1F8FB00CD6D3F /* ESMNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMNavigationViewController.h; sourceTree = "<group>"; };
+		A935078A1DC1F8FB00CD6D3F /* ESMNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMNavigationViewController.m; sourceTree = "<group>"; };
+		A935078C1DC1FA8900CD6D3F /* ESMTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMTabBarVC.h; sourceTree = "<group>"; };
+		A935078D1DC1FA8900CD6D3F /* ESMTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMTabBarVC.m; sourceTree = "<group>"; };
+		A93507911DC1FB4100CD6D3F /* ESMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMHomeViewController.h; sourceTree = "<group>"; };
+		A93507921DC1FB4100CD6D3F /* ESMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMHomeViewController.m; sourceTree = "<group>"; };
+		A93507941DC1FB5600CD6D3F /* ESMTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMTestViewController.h; sourceTree = "<group>"; };
+		A93507951DC1FB5600CD6D3F /* ESMTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMTestViewController.m; sourceTree = "<group>"; };
+		A93507971DC1FB6900CD6D3F /* ESMMoneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMMoneyViewController.h; sourceTree = "<group>"; };
+		A93507981DC1FB6900CD6D3F /* ESMMoneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMMoneyViewController.m; sourceTree = "<group>"; };
+		A935079A1DC1FB7300CD6D3F /* ESMMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMMeViewController.h; sourceTree = "<group>"; };
+		A935079B1DC1FB7300CD6D3F /* ESMMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMMeViewController.m; sourceTree = "<group>"; };
+		A935079D1DC206D600CD6D3F /* ESMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMBaseViewController.h; sourceTree = "<group>"; };
+		A935079E1DC206D600CD6D3F /* ESMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMBaseViewController.m; sourceTree = "<group>"; };
+		A93507A01DC2094E00CD6D3F /* ScreenShotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotView.h; sourceTree = "<group>"; };
+		A93507A11DC2094E00CD6D3F /* ScreenShotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotView.m; sourceTree = "<group>"; };
+		A93507A31DC20A7A00CD6D3F /* ESMOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMOneViewController.h; sourceTree = "<group>"; };
+		A93507A41DC20A7A00CD6D3F /* ESMOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMOneViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +130,8 @@
 			children = (
 				A93507561DC1F54900CD6D3F /* AppDelegate.h */,
 				A93507571DC1F54900CD6D3F /* AppDelegate.m */,
-				A93507591DC1F54900CD6D3F /* ViewController.h */,
-				A935075A1DC1F54900CD6D3F /* ViewController.m */,
+				A935078F1DC1FAE600CD6D3F /* Controller */,
+				A93507901DC1FAFC00CD6D3F /* Base */,
 				A935075C1DC1F54900CD6D3F /* Main.storyboard */,
 				A935075F1DC1F54900CD6D3F /* Assets.xcassets */,
 				A93507611DC1F54900CD6D3F /* LaunchScreen.storyboard */,
@@ -138,6 +165,40 @@
 				A935077A1DC1F54900CD6D3F /* Info.plist */,
 			);
 			path = HomeKitUITests;
+			sourceTree = "<group>";
+		};
+		A935078F1DC1FAE600CD6D3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A93507911DC1FB4100CD6D3F /* ESMHomeViewController.h */,
+				A93507921DC1FB4100CD6D3F /* ESMHomeViewController.m */,
+				A93507941DC1FB5600CD6D3F /* ESMTestViewController.h */,
+				A93507951DC1FB5600CD6D3F /* ESMTestViewController.m */,
+				A93507A31DC20A7A00CD6D3F /* ESMOneViewController.h */,
+				A93507A41DC20A7A00CD6D3F /* ESMOneViewController.m */,
+				A93507971DC1FB6900CD6D3F /* ESMMoneyViewController.h */,
+				A93507981DC1FB6900CD6D3F /* ESMMoneyViewController.m */,
+				A935079A1DC1FB7300CD6D3F /* ESMMeViewController.h */,
+				A935079B1DC1FB7300CD6D3F /* ESMMeViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A93507901DC1FAFC00CD6D3F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A935078C1DC1FA8900CD6D3F /* ESMTabBarVC.h */,
+				A935078D1DC1FA8900CD6D3F /* ESMTabBarVC.m */,
+				A93507861DC1F76E00CD6D3F /* ESMTabBarViewController.h */,
+				A93507871DC1F76E00CD6D3F /* ESMTabBarViewController.m */,
+				A93507891DC1F8FB00CD6D3F /* ESMNavigationViewController.h */,
+				A935078A1DC1F8FB00CD6D3F /* ESMNavigationViewController.m */,
+				A935079D1DC206D600CD6D3F /* ESMBaseViewController.h */,
+				A935079E1DC206D600CD6D3F /* ESMBaseViewController.m */,
+				A93507A01DC2094E00CD6D3F /* ScreenShotView.h */,
+				A93507A11DC2094E00CD6D3F /* ScreenShotView.m */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +337,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A935075B1DC1F54900CD6D3F /* ViewController.m in Sources */,
+				A935078E1DC1FA8900CD6D3F /* ESMTabBarVC.m in Sources */,
+				A935079C1DC1FB7300CD6D3F /* ESMMeViewController.m in Sources */,
+				A93507A21DC2094E00CD6D3F /* ScreenShotView.m in Sources */,
+				A93507A51DC20A7A00CD6D3F /* ESMOneViewController.m in Sources */,
+				A93507931DC1FB4100CD6D3F /* ESMHomeViewController.m in Sources */,
+				A935078B1DC1F8FB00CD6D3F /* ESMNavigationViewController.m in Sources */,
 				A93507581DC1F54900CD6D3F /* AppDelegate.m in Sources */,
+				A93507961DC1FB5600CD6D3F /* ESMTestViewController.m in Sources */,
 				A93507551DC1F54900CD6D3F /* main.m in Sources */,
+				A93507881DC1F76E00CD6D3F /* ESMTabBarViewController.m in Sources */,
+				A93507991DC1FB6900CD6D3F /* ESMMoneyViewController.m in Sources */,
+				A935079F1DC206D600CD6D3F /* ESMBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +586,7 @@
 				A935077F1DC1F54900CD6D3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A93507801DC1F54900CD6D3F /* Build configuration list for PBXNativeTarget "HomeKitTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +595,7 @@
 				A93507821DC1F54900CD6D3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A93507831DC1F54900CD6D3F /* Build configuration list for PBXNativeTarget "HomeKitUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +604,7 @@
 				A93507851DC1F54900CD6D3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
